@@ -9,8 +9,12 @@ print()
 def reset():
     #defines the game and known grid
     #represents the gamegrid as an array of 0's and the grid shown to the player as empty
-    emptyGrid = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
-    knownGridEmpty = [[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']]
+    emptyGrid = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
+    knownGridEmpty = [[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']]
     gameGrid = emptyGrid
     knownGrid = knownGridEmpty
     #places the bombs in the grid and then updates the spaces surrounding to reflect the number of bombs nearby
@@ -110,7 +114,8 @@ def printBoard(grid):
     print('    A   B   C   D   E   F   G   H   I')
     print('  ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗')
     for yCor in range (0, 9):
-        print(yCor,'║',location(yCor,0,grid),'║',location(yCor,1,grid),'║',location(yCor,2,grid),'║',location(yCor,3,grid),'║',location(yCor,4,grid),'║',location(yCor,5,grid),'║',location(yCor,6,grid),'║',location(yCor,7,grid),'║',location(yCor,8,grid),'║')
+        print(yCor,'║',location(yCor,0,grid),'║',location(yCor,1,grid),'║',location(yCor,2,grid),'║',
+        location(yCor,3,grid),'║',location(yCor,4,grid),'║',location(yCor,5,grid),'║',location(yCor,6,grid),'║',location(yCor,7,grid),'║',location(yCor,8,grid),'║')
     if not yCor == 8:
         print('  ╠═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╣')
     
