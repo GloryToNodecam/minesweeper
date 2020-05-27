@@ -226,7 +226,5 @@ def zeroProcedure(yCor,xCor,knownGrid,solutionGrid):
         row[xCor] = location(yCor+1,xCor,solutionGrid)
         if xCor+1 < 9:
             row[xCor+1] = location(yCor+1,xCor+1,solutionGrid)
-
-
 setup()
 reset()
